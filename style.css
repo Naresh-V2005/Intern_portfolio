@@ -1,0 +1,143 @@
+/* style.css - Stylish Portfolio */
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0f3460;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #e94560;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e94560;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #16213e;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: #e94560;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e94560;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.project {
+    background-color: #0f3460;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #e94560;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #ffd369;
+    margin-top: 0;
+}
+
+.project a {
+    color: #00adb5;
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff2e63;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ffd369;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #e94560;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0f3460;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
